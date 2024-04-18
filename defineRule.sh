@@ -14,5 +14,5 @@ echo "What is the Mark?"
 read MARK
 
 echo "$INFLECT follows the $REGEX pattern and inflects $PART to convey $MARK:$GRAMMATIC"
-echo "$INFLECT:$POSITION:$PART:$GRAMMATIC:$MARK" >> $LANG/Rules/InflectRules.txt
+echo "$INFLECT:$REGEX:$PART:$GRAMMATIC:$MARK" >> $LANG/Rules/InflectRules.txt
 

@@ -78,9 +78,9 @@ case $userInput in
 phono () {
 	echo "What do you need to do concerning phonotactics?"
 	echo "Push a Word Structure - 1."
-	echo "Push a Consonant(s) - 2. Not Yet Implemented"
-	echo "Push a Vowel(s) - 3. Not Yet Implemented"
-	echo "Push an illegal cluster - 4. Not yet implemented"
+	echo "Push a Consonant(s) - 2."
+	echo "Push a Vowel(s) - 3."
+	echo "Push an illegal cluster - 4."
 	read userInput
 
 case $userInput in

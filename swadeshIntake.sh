@@ -1,11 +1,11 @@
 #!/bin/bash
 #TO DO: check for illegal clusters and other nonsense
-#This script is for populating a language using a Swadesh List
+#This script is for populating a language using a tsv Swadesh List
 
 SWADESH=$1
 
 # Grab our rules
-mapfile -t swadesh < <(cut -d ";" -f 1 "$LANG/Swadesh/$SWADESH")
+mapfile -t swadesh < <(cut -f 1 "$LANG/Swadesh/$SWADESH")
 
 for word in "${swadesh[@]}"
 do

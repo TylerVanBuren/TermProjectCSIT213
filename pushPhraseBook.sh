@@ -17,12 +17,10 @@ do
 		echo "Not found"
 	fi
 	if [ check != "" ]; then
-		#What a mess
 		#Sed grabs the 5th line, getting the first definition
-		#then cut grabs the actual definitioni
 		FORMATTED_PHRASE+=$(format ${word})
-		DEF+=" "$(sed -n 5p $LANG/Dictionary/$word.md | cut -d " " -f 2)
+		DEF+=" "$(sed -n 5p $LANG/Dictionary/$word.md)
 	fi
 done
 	echo $FORMATTED_PHRASE > "${DIR}/${PHRASE}.md"
-	echo $DEF >> "${DIR}/${PHRASE}.md"
+	echo "${DEF[@]}" >> "${DIR}/${PHRASE}.md"
