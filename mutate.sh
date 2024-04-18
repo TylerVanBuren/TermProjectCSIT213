@@ -20,7 +20,5 @@ LOSS=$1
 REPLACE=$2
 newDIC="$3/Dictionary"
 
-mkdir -p $newDIC
-
 #find all of the words with the pattern to be replaced.
 mutate $newDIC $LOSS $REPLACE $DIC

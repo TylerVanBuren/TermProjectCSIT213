@@ -8,7 +8,7 @@ read inptLANG
 if [ ! -d ./$inptLANG ]; then
 	echo "Directory doesn't exist, populating new language..."
 	sleep 2
-	/popNewLang.sh $inptLANG
+	./popNewLang.sh $inptLANG
 fi
 
 

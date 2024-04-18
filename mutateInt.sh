@@ -5,6 +5,7 @@ echo "How many mutations?"
 read NUM
 echo "What is the name of the daughter language?"
 read DAUGHTER
+./popNewLang.sh $DAUGHTER
 for (( i = 0; i < NUM; i++ ));
 do
 	echo "Enter the string to be replaced"
