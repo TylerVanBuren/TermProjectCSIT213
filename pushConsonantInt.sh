@@ -9,9 +9,10 @@ for((i = 0; i < $NUM; i++))
 do
 	echo "Enter the Consonant"
 	read CONSONANT
-	while [ ${#CONSONANT} != 1]
+	while [ ${#CONSONANT} != 1 ]
 	do
 		echo "One consonant at a time please!"
 		read CONSONANT
-		./pushConsonant CONSONANT
+	done
+	./pushConsonant.sh $CONSONANT
 done
