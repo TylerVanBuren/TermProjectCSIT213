@@ -12,4 +12,4 @@ read TAGS
 }
 
 takeinpt
-./pushToDic.sh $WORD "${TAGS[@]}" $DEF
+./pushToDic.sh $WORD "${TAGS[@]}" "$DEF"

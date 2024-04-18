@@ -1,14 +1,7 @@
 #!/bin/bash
 #This script allows the user to push consonants
 
-echo "Please input your consonant"
+CONSONANT=$1
 
-read CONSONANT
+echo "$CONSONANT;" >> "$LANG/Rules/Consonants.txt"
 
-length=${#CONSONANT}
-
-if [ $length -gt 1 ]; then
-	echo "A single consonant please!"
-else
-	echo "$CONSONANT;" >> "$LANG/Rules/Consonants.txt"
-fi

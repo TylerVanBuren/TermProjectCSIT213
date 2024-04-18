@@ -89,13 +89,13 @@ case $userInput in
 		./pushSyllableRuleInt.sh
 		;;
 	2)
-		./pushConsonant.sh
+		./pushConsonantInt.sh
 		;;
 	3)
-		./pushVowel.sh
+		./pushVowelInt.sh
 		;;
 	4)
-		./pushCluster.sh
+		./pushClusterInt.sh
 		;;
 	esac
 

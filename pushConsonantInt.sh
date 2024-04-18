@@ -1,7 +1,17 @@
 #!/bin/bash
-#This allows the user to push Syllable constructs
+#This script interaces with the pushConsonant script
 
-echo "Please input your construct"
-read CONSTRUCT
+echo "How many Consonants are you pushing?"
+read NUM
 
-./pushSyllableRule.sh $CONSTRUCT
+
+for((i = 0; i < $NUM; i++)) 
+do
+	echo "Enter the Consonant"
+	read CONSONANT
+	while [ ${#CONSONANT} != 1]
+	do
+		echo "One consonant at a time please!"
+		read CONSONANT
+		./pushConsonant CONSONANT
+done
