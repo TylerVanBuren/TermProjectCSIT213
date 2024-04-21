@@ -9,12 +9,7 @@
 OUTPUT="$LANG/Dictionary/$1.md"
 
 echo "---
-tags:" > $OUTPUT
-#loop for each tag
-for word in $2
-do
-	echo "	"$word >> $OUTPUT
-done
+tags: $2" > $OUTPUT
 echo "---
 # $1
 1. $3" >> $OUTPUT

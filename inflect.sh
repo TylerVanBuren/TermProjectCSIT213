@@ -3,7 +3,7 @@
 #Then we use sed to inflect the root based off of our rules
 
 ROOT=$1
-TAGS=$(sed -n 3p $LANG/Dictionary/$ROOT.md)
+TAGS=$(sed -n 2p $LANG/Dictionary/$ROOT.md)
 
 for tag in $TAGS
 do

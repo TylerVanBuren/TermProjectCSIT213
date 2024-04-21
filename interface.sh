@@ -29,15 +29,19 @@ read userInput
 case $userInput in
 
 	1)
+		clear
 		dictionary
 		;;
 	2)
+		clear
 		phono
 		;;
 	3)
+		clear
 		phrase
 		;;
 	4)
+		clear
 		mutate
 		;;
 	0)
