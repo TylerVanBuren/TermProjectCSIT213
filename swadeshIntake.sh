@@ -5,7 +5,7 @@
 SWADESH=$1
 
 # Grab our rules
-mapfile -t swadesh < <(cut -f 1 "$LANG/Swadesh/$SWADESH")
+mapfile -t swadesh < <(cut -f 1 "./Swadesh/$SWADESH")
 
 for word in "${swadesh[@]}"
 do

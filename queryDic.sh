@@ -16,7 +16,7 @@ fi
 
 for found in ${RESULTS[@]}
 do
-	DEF+=" "$(sed -n 5p $found | cut -d " " -f 2) 
+	DEF+=" ""$(sed -n 5p $found)" 
 	echo "$found $DEF"
 	DEF=" "
 done

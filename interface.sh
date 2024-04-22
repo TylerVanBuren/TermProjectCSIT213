@@ -53,9 +53,10 @@ dictionary () {
 	echo "What would you like to do in the dictionary?"
 	echo "Push a word - 1."
 	echo "Query a word - 2."
-	echo "Upload from Swadesh - 3."
-	echo "Push an inflection rule - 4."
-	echo "View word inflections - 5."
+	echo "Push an inflection rule - 3."
+	echo "View word inflections - 4."
+	echo "Upload from Dictionary - 5."	
+	echo "Upload from Swadesh - 6."
 	read userInput
 
 case $userInput in
@@ -67,14 +68,18 @@ case $userInput in
 		./queryDicInt.sh
 		;;
 	3)
-		./swadeshInt.sh
-		;;
-	4)
 		./defineRule.sh
 		;;
-	5)
+	4)
 		./inflectInt.sh
 		;;
+	5)
+		./pushDic.sh
+		;;
+	6)
+		./swadeshInt.sh
+		;;
+	
 	esac
 
 	
