@@ -19,9 +19,9 @@ export CHOICE=1
 #Main interface
 main () {
 echo "Hi, what do you want to do today?"
-echo "Dictionary - 1."
-echo "Phonotactics -2."
-echo "PhraseBook - 3"
+echo "Dictionary - 1. "
+echo "Phonotactics - 2. "
+echo "PhraseBook - 3. "
 echo "Mutate Language - 4."
 echo "Quit - 0."
 read userInput
@@ -74,7 +74,7 @@ case $userInput in
 		./inflectInt.sh
 		;;
 	5)
-		./pushDic.sh
+		./dicInt.sh
 		;;
 	6)
 		./swadeshInt.sh
@@ -86,7 +86,7 @@ case $userInput in
 }
 phono () {
 	echo "What do you need to do concerning phonotactics?"
-	echo "Push a Word Structure - 1."
+	echo "Push a Syllable Structure - 1."
 	echo "Push a Consonant(s) - 2."
 	echo "Push a Vowel(s) - 3."
 	echo "Push an illegal cluster - 4."
