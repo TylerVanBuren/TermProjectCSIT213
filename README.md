@@ -40,34 +40,43 @@ When you are prompted for a language, the script will automatically create folde
 ### Push a word
 This pushes a user defined word to the dictionary as a markdown file.
 
+![John pushed to Dictionary](/Documentation_Images/PushDictionary.png "John")
+![John opened within a markdown viewer](/Documentation_Images/John.png)
 ### Query a word
-This returns a word and its definition based on user search.
+This returns a word and its definition based on user search
+![John found](Documentation_Images/QueryDictionary1.png)
 
 ### View word inflections
 This will inflect a given word, so long as it exists in the dictionary and has appropriate tags to guide inflection rules.
+	![](Documentation_Images/ViewInflections.png)
 
 ### Push Inflection rules
 Grabs a RegEx expression from the user and a replacement string to be applied to words with a specific tags.
-
+![](Documentation_Images/PushInflection.png "Forgot to put the ? character to make eliding the jo optional")
 ### Push from Dictionary
 Populates the language from a tab delimited dictionary file where
 *The first tab is the word
 *The second is the definition
 *Finally the third is the array of tags
-
+![](Documentation_Images/UploadFromDic.png)
 ### Push from Swadesh
 Populates the language by randomly generating words and matching them to premade definitions from a tsv.
-
+![](/Documentation_Images/swadesh1.png)
+![](/Documentation_Images/swadesh2.png)
+**==You should probably head to the next section and populate some construction rules before doing this.==**
 ---
 ## Phonotactics
 ---
 
 ### Push a Syllable Structure
 Pushes a Vowel Consonant structure
+![](Documentation_Images/PushConstruct.png)
 ### Push a Consonant
 Pushes valid consonants for word generation
+![](/Documentation_Images/Consonants.png)
 ### Push a Vowel
-Pushes Valid vowels for word generation
+Pushes valid vowels for word generation
+![](Documentation_Images/Vowels.png)
 ### Push an Illegal clusters
 Pushes Illegal clusters to be ellided during word generation(//elliding of illegal clusters not yet implemented)
 
@@ -76,7 +85,8 @@ Pushes Illegal clusters to be ellided during word generation(//elliding of illeg
 ---
 ### Push a Phrase
 This pushes a phrase as a markdown file to a folder containing all of the languages phrases. If the words are in the dictionary, they will be hyperlinked to their dictionary file.
-
+![](Documentation_Images/PushPhrase1.png)
+![](Documentation_Images/PushPhrase2.png)
 ---
 ## Mutate
 ---
